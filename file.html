@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <p>Welcome to my website about jquery</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Click to fade out boxes</button><br><br>
+
+<div id="div1" style="width:50px;height:50px;background-color:rgb(25, 245, 18);"></div><br>
+<div id="div2" style="width:50px;height:50px;background-color:rgb(11, 177, 243);"></div><br>
+<div id="div3" style="width:50px;height:50px;background-color:rgb(216, 238, 14);"></div>
+
+
+
+<script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+      });
+    });
+    </script>
+    <style> 
+    #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #f50930;
+      border: solid 1px #200909;
+    }
+    
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+    </style>
+    </head>
+    <body>
+     
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello You!</div>
+
+    
+
+</body>
+</html>
